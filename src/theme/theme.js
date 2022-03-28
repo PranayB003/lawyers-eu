@@ -10,6 +10,4 @@ let theme = createTheme({
 
 theme = responsiveFontSizes(theme);
 
-console.log(theme);
-
 export default theme;

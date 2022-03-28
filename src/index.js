@@ -6,14 +6,17 @@ import reportWebVitals from "./reportWebVitals";
 
 import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles";
 import theme from "./theme/theme";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
     <React.StrictMode>
-        <StyledEngineProvider injectFirst>
-            <ThemeProvider theme={theme}>
-                <App />
-            </ThemeProvider>
-        </StyledEngineProvider>
+        <ThemeProvider theme={theme}>
+            <BrowserRouter>
+                <StyledEngineProvider injectFirst>
+                    <App />
+                </StyledEngineProvider>
+            </BrowserRouter>
+        </ThemeProvider>
     </React.StrictMode>,
     document.getElementById("root")
 );
