@@ -1,25 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import { Button, Typography } from "@mui/material";
+import React from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return <Button variant="contained">Hemllo Worlmd ?</Button>;
 }
 
 export default App;
