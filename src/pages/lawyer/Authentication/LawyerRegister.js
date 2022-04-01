@@ -74,6 +74,15 @@ const LawyerRegister = () => {
     return (
         <Box className={classes.wrapperBox}>
             {/* Add TitleBar */}
+            <Typography
+                variant="subtitle2"
+                fontWeight={500}
+                className={classes.pageDescription}
+                color="text.disabled"
+            >
+                LAWYERS.eu is providing a long term sustainable solution to
+                legal professionals, addressing their core needs.
+            </Typography>
             <Stack spacing={4} className={classes.inputStack}>
                 {fields.map((field) => {
                     if (field.type === "shortText") {
