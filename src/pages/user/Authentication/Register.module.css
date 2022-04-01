@@ -1,0 +1,18 @@
+.wrapperBox {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.inputStack {
+    padding: 4vw;
+    flex-grow: 1;
+}
+
+.tnc {
+    text-underline-offset: 2px;
+}
+
+.registerBtn {
+    margin: 4vh 4vw;
+}

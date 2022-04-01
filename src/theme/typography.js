@@ -14,7 +14,7 @@ const typography = {
     },
     button: {
         fontWeight: 500,
-        fontSize: "1.875rem",
+        fontSize: "1.5rem",
         textTransform: "none",
     },
     h1: {
