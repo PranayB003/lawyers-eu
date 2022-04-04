@@ -1,0 +1,72 @@
+.ok {
+  background-color: pink;
+}
+.TopDiv {
+  padding-top: 92px;
+  padding-bottom: 42px;
+}
+.BtnText {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* White */
+
+  color: #ffffff;
+}
+.BottomDiv {
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+.ResendOTP {
+  border-color: white;
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Black */
+
+  color: #000000;
+}
+.SubmitBtn {
+  padding-top: 20px;
+
+  padding-bottom: 20px;
+}
+input[type="text"] {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 22px;
+  /* identical to box height, or 129% */
+
+  padding-bottom: 16px;
+  text-align: center;
+  letter-spacing: -0.0041em;
+
+  /* Labelscolors/ Primary */
+
+  color: #000000;
+}
+.otpInput {
+  padding-bottom: 20px;
+  outline: none;
+  width: 80px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
