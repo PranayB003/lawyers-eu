@@ -1,10 +1,23 @@
 import React, { useState } from "react";
 
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Box, Button, InputAdornment, Stack, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import InputWithLabel from "../components/FormComponents/InputWithLabel";
 
+const CountryCodeAdornment = styled((props) => <InputAdornment {...props} />)(
+    ({ theme }) => ({
+        "& .MuiTypography-root": {
+            color: theme.palette.text.disabled,
+            paddingLeft: "20px",
+            marginRight: "-10px",
+            fontSize: theme.typography.subtitle1.fontSize,
+        },
+    })
+);
+
 const GetStarted = ({ user = "client" }) => {
-    const [phoneNumber, setPhoneNumber] = useState(undefined);
+    const [phoneNumber, setPhoneNumber] = useState("");
+    const [countryCode, setCountryCode] = useState("+44");
 
     const changeHandler = (name, newVal) => {
         setPhoneNumber(newVal);
@@ -39,16 +52,21 @@ const GetStarted = ({ user = "client" }) => {
                     label="Enter phone number"
                     value={phoneNumber}
                     onChange={changeHandler}
+                    inputProps={{
+                        startAdornment: (
+                            <CountryCodeAdornment position="start">
+                                {countryCode}
+                            </CountryCodeAdornment>
+                        ),
+                    }}
                 />
                 <Button variant="contained">Continue</Button>
             </Stack>
-            <Typography
-                variant="subtitle2"
-                sx={{ pb: "6vh" }}
-                textAlign="center"
-            >
-                {bottomMessage}
-            </Typography>
+            <Button sx={{ mb: "6vh" }} disableRipple>
+                <Typography variant="subtitle2" textAlign="center">
+                    {bottomMessage}
+                </Typography>
+            </Button>
         </Box>
     );
 };

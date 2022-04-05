@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Register from "./pages/user/Authentication/Register";
 import LawyerRegister from "./pages/lawyer/Authentication/LawyerRegister";
 import GetStarted from "./pages/GetStarted";
+import SelectServices from "./pages/user/SelectServices";
 
 function App() {
     return (
@@ -15,6 +16,10 @@ function App() {
                 <Route
                     path="client/get-started"
                     element={<GetStarted user="client" />}
+                />
+                <Route
+                    path="client/select-services"
+                    element={<SelectServices />}
                 />
 
                 {/* Lawyer UI Routes */}

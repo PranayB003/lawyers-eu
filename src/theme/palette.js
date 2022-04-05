@@ -16,6 +16,11 @@ const palette = {
         dark: "#282828",
         contrastText: "#FFFFFF",
     },
+    disabled: {
+        light: "#E7E7E7",
+        main: "#A1A1A1",
+        contrastText: "#FFFFFF",
+    },
     error: {
         main: "#F17878",
         contrastText: "#FFFFFF",
