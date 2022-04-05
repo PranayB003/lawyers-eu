@@ -103,7 +103,7 @@ const OTPInputComponent = () => {
         alignSelf={`center`}
       >
         <div className="BottomDiv">
-          <Button variant="outlined" className="ResendOTP">
+          <Button disableElevation={true} disableFocusRipple={true} disableRipple={true} variant="outlined" className="ResendOTP">
             Resend OTP
           </Button>
         </div>

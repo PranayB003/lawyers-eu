@@ -26,6 +26,23 @@
   transform: translate(-50%, -50%);
   margin: 0 auto;
 }
+.ResendOTP:hover {
+  border-color: white;
+  background: none;
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  /* Black */
+
+  color: #000000;
+}
+
 .ResendOTP {
   border-color: white;
   font-family: "Maven Pro";
@@ -36,7 +53,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-
+  
   /* Black */
 
   color: #000000;
@@ -46,7 +63,7 @@
 
   padding-bottom: 20px;
 }
-input[type="text"] {
+input[type="text"].otpInput {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
