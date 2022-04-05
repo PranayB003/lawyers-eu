@@ -6,7 +6,7 @@ const typography = {
     fontWeightBold: 700,
     body1: {
         fontWeight: 400,
-        fontSize: "1.5rem",
+        fontSize: "1rem",
     },
     body2: {
         fontWeight: 500,
@@ -14,7 +14,7 @@ const typography = {
     },
     button: {
         fontWeight: 500,
-        fontSize: "1.5rem",
+        fontSize: "1rem",
         textTransform: "none",
     },
     h1: {
@@ -56,6 +56,7 @@ const typography = {
     caption: {
         fontSize: "1.5rem",
         fontWeight: 600,
+        textTransform: "none",
     },
 };
 

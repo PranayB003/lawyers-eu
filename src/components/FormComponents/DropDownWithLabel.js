@@ -6,9 +6,6 @@ import { Autocomplete, TextField } from "@mui/material";
 const StyledTextField = styled((props) => (
     <TextField variant="standard" {...props} />
 ))(({ theme }) => ({
-    "& MuiFormControl-root": {
-        justifyContent: "flex-start",
-    },
     "& .MuiInputLabel-root": {
         fontSize: theme.typography.body2.fontSize,
         fontWeight: theme.typography.body2.fontWeight,

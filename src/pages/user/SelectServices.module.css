@@ -1,0 +1,32 @@
+.wrapperBox {
+    min-height: 100vh;
+    padding: 0 6vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2vh 0 3vh 0;
+}
+
+.box2 {
+    flex-grow: 1;
+    margin-top: 3vh;
+}
+
+.chipStack {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    align-items: flex-start;
+}
+
+.chip {
+    max-width: none;
+}
+
+.nextBtn {
+    margin: 3vh auto;
+}
