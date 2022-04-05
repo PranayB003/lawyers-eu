@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Routes, Route } from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 
 import Register from "./pages/user/Authentication/Register";
 import LawyerRegister from "./pages/lawyer/Authentication/LawyerRegister";
@@ -8,7 +8,7 @@ import GetStarted from "./pages/GetStarted";
 import SplashScreen from "./pages/user/MainScreenWithCarousalComponent/SplashScreen";
 import Functionalities from "./pages/user/MainScreenWithCarousalComponent/Functionalities";
 import OTPUser from "./pages/user/OTPPage/OTPPage";
-function App() {
+const App = () => {
   return (
     <React.Fragment>
       <Routes>

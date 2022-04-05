@@ -1,7 +1,7 @@
 import * as React from "react";
-import { Button, Stack, ListItem, Grid } from "@mui/material";
+import {Button, Stack, ListItem, Grid} from "@mui/material";
 import "./ComponentCarousal.css";
-function MainCarousel(props) {
+const MainCarousel = (props) => {
   return (
     <Stack className="center">
       <ListItem className="center">
