@@ -7,13 +7,16 @@ import LawyerRegister from "./pages/lawyer/Authentication/LawyerRegister";
 import GetStarted from "./pages/GetStarted";
 import SplashScreen from "./pages/user/MainScreenWithCarousalComponent/SplashScreen";
 import Functionalities from "./pages/user/MainScreenWithCarousalComponent/Functionalities";
-import OTPUser from "./pages/user/OTPPage/OTPPage";
+import OTPUser from "./pages/OTPPage/OTPPage";
 import SelectServices from "./pages/user/SelectServices";
 
 function App() {
     return (
         <React.Fragment>
             <Routes>
+                {/* Common Routes */}
+                <Route path="otp" element={<OTPUser />} />
+
                 {/* Client UI Routes */}
                 <Route path="client/register" element={<Register />} />
                 <Route
@@ -25,7 +28,6 @@ function App() {
                     path="home/functionalities"
                     element={<Functionalities />}
                 />
-                <Route path="OTP" element={<OTPUser />} />
                 <Route
                     path="client/select-services"
                     element={<SelectServices />}
@@ -37,7 +39,6 @@ function App() {
                     path="lawyer/get-started"
                     element={<GetStarted user="lawyer" />}
                 />
-                <Route path="Lawyer/OTP" element={<OTPUser user="Lawyer" />} />
             </Routes>
         </React.Fragment>
     );
