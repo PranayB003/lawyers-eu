@@ -1,0 +1,49 @@
+.LastBox{
+  padding-bottom: -10px;
+}
+.wrapperBox {
+  min-height: 100vh;
+  padding: 0 6vw;
+  display: flex;
+  flex-direction: column;
+}
+.ButtonStart {
+  position: absolute;
+  left: -20px;
+}
+.ButtonEnd {
+  position: absolute;
+  right: 0;
+}
+.box1 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 0 3vh 0;
+}
+
+.box2 > * {
+    margin: 10px;
+}
+.box2 {
+  display: flex;
+  /* position: relative; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+.chipStack {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  align-items: flex-start;
+}
+
+.chip {
+  max-width: none;
+}
+
+.nextBtn {
+  margin: 3vh auto;
+}
