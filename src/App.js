@@ -10,6 +10,7 @@ import Functionalities from "./pages/user/MainScreenWithCarousalComponent/Functi
 import OTPUser from "./pages/user/OTPPage/OTPPage";
 import SelectServices from "./pages/user/SelectServices";
 import LawyersForYou from "./pages/user/LawyersAvailable/LawyerForYou";
+import SelectCity from "./pages/user/SelectCity/selectCity";
 function App() {
   return (
     <React.Fragment>
@@ -25,7 +26,7 @@ function App() {
         <Route path="OTP" element={<OTPUser />} />
         <Route path="client/select-services" element={<SelectServices />} />
         <Route path="lawyers/available" element={<LawyersForYou />} />
-
+        <Route path="select/city" element={<SelectCity />} />
         {/* Lawyer UI Routes */}
         <Route path="lawyer/register" element={<LawyerRegister />} />
         <Route

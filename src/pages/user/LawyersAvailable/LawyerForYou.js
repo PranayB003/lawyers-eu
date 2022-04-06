@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-
-import { Box, Typography, Stack, Button, Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import classes from "./LawyerForYou.module.css";
 import SearchBar from "../../../components/SearchBar/SearchBar";
 import { ReactComponent as SettingsSVG } from "../../../resources/Icon.svg";
@@ -11,7 +10,6 @@ import SampleLawyer from "../../../resources/Bitmap.jpg";
 const SelectServices = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const Lawyers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
   const AvailableLawyers = [
     {
       name: "Bellamy James",
