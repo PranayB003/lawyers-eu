@@ -8,9 +8,11 @@ import GetStarted from "./pages/GetStarted";
 import SplashScreen from "./pages/user/MainScreenWithCarousalComponent/SplashScreen";
 import Functionalities from "./pages/user/MainScreenWithCarousalComponent/Functionalities";
 import OTPUser from "./pages/OTPPage/OTPPage";
-import SelectServices from "./pages/user/SelectServices";
+import SelectServices from "./pages/user/SelectServices/SelectServices";
 import LawyersForYou from "./pages/user/LawyersAvailable/LawyerForYou";
 import SelectCity from "./pages/user/SelectCity/selectCity";
+import ScheduleMeeting from "./pages/user/ScheduleMeeting/ScheduleMeeting";
+
 function App() {
     return (
         <React.Fragment>
@@ -35,6 +37,10 @@ function App() {
                 />
                 <Route path="lawyers/available" element={<LawyersForYou />} />
                 <Route path="select/city" element={<SelectCity />} />
+                <Route
+                    path="client/schedule-meeting"
+                    element={<ScheduleMeeting />}
+                />
 
                 {/* Lawyer UI Routes */}
                 <Route path="lawyer/register" element={<LawyerRegister />} />

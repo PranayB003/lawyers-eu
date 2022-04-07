@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Box, Typography, Stack, Button, Chip } from "@mui/material";
 import classes from "./SelectServices.module.css";
 import { FiEdit } from "react-icons/fi";
-import SearchBar from "../../components/SearchBar/SearchBar";
+import SearchBar from "../../../components/SearchBar/SearchBar";
 
 const legalServices = [
     {
@@ -55,8 +55,6 @@ const SelectServices = () => {
     const [selectedServices, setSelectedServices] = useState(getServicesObject);
     const [nextBtnEnabled, setNextBtnEnabled] = useState(0);
 
-    console.log(selectedServices);
-
     const searchChangeHandler = (newSearchTerm) => {
         setSearchTerm(newSearchTerm);
     };
@@ -82,7 +80,7 @@ const SelectServices = () => {
     return (
         <Box className={classes.wrapperBox}>
             {/* Insert TitleBar */}
-            <Box className={classes.box1}>
+            <Box className={classes.subHeadingBox}>
                 <Typography variant="caption">Select Service(s)</Typography>
                 <Stack>
                     <Typography
@@ -96,7 +94,7 @@ const SelectServices = () => {
                 </Stack>
             </Box>
             <SearchBar value={searchTerm} onChange={searchChangeHandler} />
-            <Box className={classes.box2}>
+            <Box className={classes.servicesListBox}>
                 {legalServices.map((category) => (
                     <React.Fragment key={`${category.categoryName}Root`}>
                         <Typography

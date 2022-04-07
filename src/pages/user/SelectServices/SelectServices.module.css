@@ -1,20 +1,21 @@
 .wrapperBox {
-    min-height: 100vh;
+    height: 100vh;
     padding: 0 6vw;
     display: flex;
     flex-direction: column;
 }
 
-.box1 {
+.subHeadingBox {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2vh 0 3vh 0;
 }
 
-.box2 {
+.servicesListBox {
     flex-grow: 1;
     margin-top: 3vh;
+    overflow: auto;
 }
 
 .chipStack {

@@ -9,6 +9,7 @@ const StyledFormControl = styled((props) => <FormControl {...props} />)(
             fontWeight: theme.typography.body2.fontWeight,
             paddingLeft: "20px",
             position: "relative",
+            overflow: "visible",
         },
         "& .MuiInput-root": {
             marginTop: "0px",
