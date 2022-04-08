@@ -1,16 +1,25 @@
 import React from "react";
 
-import classes from "./MiniMeetingInfo.module.css";
-import { Avatar, Grid, IconButton, Paper, Typography } from "@mui/material";
+import classes from "./PreviewCards.module.css";
+import {
+    Avatar,
+    Grid,
+    IconButton,
+    Paper,
+    Stack,
+    Typography,
+} from "@mui/material";
 import { FiEdit } from "react-icons/fi";
 import dummyImage from "./../../resources/dummyMeetingInfo.png";
+import { Box } from "@mui/system";
 
-const MiniMeetingInfo = ({
+const MeetingPreview = ({
     lawyerImage = dummyImage,
     lawyerName = "Vivek Sharma",
     date = "TUE, 14 July 2022",
     time = "12:30 PM",
     cost = "40",
+    enableEdit = true,
 }) => {
     return (
         <Paper className={classes.container}>
@@ -20,54 +29,38 @@ const MiniMeetingInfo = ({
                 src={lawyerImage}
                 className={classes.image}
             />
-            <Grid container>
-                <Grid item sm={6} className={classes.gridItems}>
+            <Stack className={classes.stack}>
+                <Box className={classes.stackBox}>
                     <Typography
                         fontWeight={600}
                     >{`Meeting With ${lawyerName}`}</Typography>
-                </Grid>
-                <Grid
-                    item
-                    sm={6}
-                    className={`${classes.gridItems} ${classes.right}`}
-                >
-                    <IconButton size="small" disableRipple>
-                        <FiEdit />
-                    </IconButton>
-                </Grid>
-                <Grid item sm={6} className={classes.gridItems}>
+                    {enableEdit && (
+                        <IconButton size="small" disableRipple>
+                            <FiEdit />
+                        </IconButton>
+                    )}
+                </Box>
+                <Box className={`${classes.stackBox} ${classes.verticalDense}`}>
                     <Typography variant="subtitle3">Date and Time</Typography>
-                </Grid>
-                <Grid
-                    item
-                    sm={6}
-                    className={`${classes.gridItems} ${classes.right}`}
-                >
                     <Typography
                         variant="overline"
                         color="text.disabled"
                         textAlign="right"
                     >{`${date} | ${time}`}</Typography>
-                </Grid>
-                <Grid item sm={6} className={classes.gridItems}>
+                </Box>
+                <Box className={`${classes.stackBox} ${classes.verticalDense}`}>
                     <Typography variant="subtitle3">
                         Consultation Charge
                     </Typography>
-                </Grid>
-                <Grid
-                    item
-                    sm={6}
-                    className={`${classes.gridItems} ${classes.right}`}
-                >
                     <Typography
                         variant="overline"
                         color="text.disabled"
                         textAlign="right"
                     >{`$${cost}/hr`}</Typography>
-                </Grid>
-            </Grid>
+                </Box>
+            </Stack>
         </Paper>
     );
 };
 
-export default MiniMeetingInfo;
+export default MeetingPreview;

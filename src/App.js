@@ -12,7 +12,9 @@ import SelectServices from "./pages/user/SelectServices/SelectServices";
 import LawyersForYou from "./pages/user/LawyersAvailable/LawyerForYou";
 import SelectCity from "./pages/user/SelectCity/selectCity";
 import ScheduleMeeting from "./pages/user/ScheduleMeeting/ScheduleMeeting";
-import PostQuestion from "./pages/user/PostQuestion/PostQuestion";
+import PostQuestion from "./pages/user/PostQuestion";
+import RequestProposal from "./pages/user/RequestProposal";
+import MyRequests from "./pages/user/MyRequests";
 
 function App() {
     return (
@@ -43,6 +45,8 @@ function App() {
                     element={<ScheduleMeeting />}
                 />
                 <Route path="forum/new" element={<PostQuestion />} />
+                <Route path="request-proposal" element={<RequestProposal />} />
+                <Route path="requests" element={<MyRequests />} />
 
                 {/* Lawyer UI Routes */}
                 <Route path="lawyer/register" element={<LawyerRegister />} />
