@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import classes from "./ScheduleMeeting.module.css";
 import { Box, Button, Stack } from "@mui/material";
 import TitleBar from "./../../../components/TitleBar/TitleBar";
-import { ReactComponent as GoBackSVG } from "../../../resources/Union.svg";
+import { ReactComponent as BackIcon } from "../../../resources/Union.svg";
 import InputWithLabel from "../../../components/FormComponents/InputWithLabel";
-import MiniMeetingInfo from "../../../components/MiniInfo/MiniMeetingInfo";
+import MiniMeetingInfo from "../../../components/PreviewCards/MeetingPreview";
 
 const meetingDetailInputs = [
     { name: "name", label: "Full Name", helperText: "Full Name" },
@@ -50,7 +50,7 @@ const ScheduleMeeting = ({ lawyerImage, lawyerName, date, time, cost }) => {
 
     return (
         <Box className={classes.wrapperBox}>
-            <TitleBar Title="Enter Details" startIcon={<GoBackSVG />} />
+            <TitleBar Title="Enter Details" startIcon={<BackIcon />} />
             <MiniMeetingInfo
                 lawyerImage={lawyerImage}
                 lawyerName={lawyerName}

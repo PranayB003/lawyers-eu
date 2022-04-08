@@ -1,19 +1,11 @@
 import React, { useState } from "react";
 
-import { Box, Button, Stack, styled, Typography } from "@mui/material";
-import TitleBar from "./../../../components/TitleBar/TitleBar";
-import { ReactComponent as SettingsIcon } from "../../../resources/Icon.svg";
-import { ReactComponent as BackIcon } from "../../../resources/Union.svg";
-import DropDownWithLabel from "../../../components/FormComponents/DropDownWithLabel";
-import InputWithLabel from "../../../components/FormComponents/InputWithLabel";
-import CheckWithLabel from "../../../components/FormComponents/CheckWithLabel";
-import NavChips from "../../../components/NavChips/NavChips";
-
-const WrapperBox = styled((props) => <Box {...props} />)(({ theme }) => ({
-    padding: "0 6vw 3vh",
-    display: "flex",
-    flexDirection: "column",
-}));
+import { styled, Typography, Box, Stack, Button } from "@mui/material";
+import TitleBar from "../../components/TitleBar/TitleBar";
+import { ReactComponent as SettingsIcon } from "../../resources/Icon.svg";
+import { ReactComponent as BackIcon } from "../../resources/Union.svg";
+import DropDownWithLabel from "../../components/FormComponents/DropDownWithLabel";
+import InputWithLabel from "../../components/FormComponents/InputWithLabel";
 
 const questionInputDetails = [
     {
@@ -52,6 +44,12 @@ const questionInputDetails = [
         label: "Phone",
         helperText: "Phone Number",
     },
+    {
+        name: "city",
+        label: "City",
+        helperText: "Select City",
+        type: "dropdown",
+    },
 ];
 
 const getInitialState = () => {
@@ -62,11 +60,16 @@ const getInitialState = () => {
             [questionInput.name]: "",
         };
     });
-    initialState["forum"] = false;
     return initialState;
 };
 
-const PostQuestion = () => {
+const WrapperBox = styled((props) => <Box {...props} />)(({ theme }) => ({
+    padding: "0 6vw 3vh",
+    display: "flex",
+    flexDirection: "column",
+}));
+
+const RequestProposal = () => {
     const [questionDetails, setQuestionDetails] = useState(getInitialState);
 
     const inputChangeHandler = (name, newValue) => {
@@ -81,12 +84,15 @@ const PostQuestion = () => {
     return (
         <WrapperBox>
             <TitleBar
-                Title="Ask a Question."
+                Title="Request Proposal"
                 endIcon={<SettingsIcon />}
                 startIcon={<BackIcon />}
             />
-            <NavChips />
-            <Stack spacing={4} sx={{ mb: "3vh", mt: "4vh" }}>
+            <Typography color="text.disabled">
+                Tell us your requirements and get proposals directly to your
+                inbox.
+            </Typography>
+            <Stack spacing={4} sx={{ my: "4vh" }}>
                 {questionInputDetails.map((input) => {
                     const commonProps = {
                         key: input.name,
@@ -112,18 +118,12 @@ const PostQuestion = () => {
                             />
                         );
                 })}
-                <CheckWithLabel
-                    value="forum"
-                    label={<Typography>Post this question to Forum</Typography>}
-                    checked={questionDetails["forum"]}
-                    onChange={inputChangeHandler}
-                />
             </Stack>
             <Button variant="contained" fullWidth>
-                Get FREE Legal Advice
+                Request Proposals
             </Button>
         </WrapperBox>
     );
 };
 
-export default PostQuestion;
+export default RequestProposal;

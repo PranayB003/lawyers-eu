@@ -10,7 +10,7 @@ const typography = {
     },
     body2: {
         fontWeight: 500,
-        fontSize: "1.5rem",
+        fontSize: "1rem",
     },
     button: {
         fontWeight: 500,
@@ -18,27 +18,27 @@ const typography = {
         textTransform: "none",
     },
     h1: {
-        fontSize: "3rem",
+        fontSize: "2rem",
         fontWeight: 600,
     },
     h2: {
-        fontSize: "2.25rem",
+        fontSize: "1.5rem",
         fontWeight: 600,
     },
     h3: {
-        fontSize: "2.25rem",
+        fontSize: "1.5rem",
         fontWeight: 400,
     },
     h4: {
-        fontSize: "2rem",
+        fontSize: "1.33rem",
         fontWeight: 600,
     },
     h5: {
-        fontSize: "2rem",
+        fontSize: "1.33rem",
         fontWeight: 400,
     },
     h6: {
-        fontSize: "1.75rem",
+        fontSize: "1.166rem",
         fontWeight: 400,
     },
     subtitle1: {
