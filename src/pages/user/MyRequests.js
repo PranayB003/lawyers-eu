@@ -5,7 +5,7 @@ import TitleBar from "../../components/TitleBar/TitleBar";
 import { ReactComponent as BackIcon } from "../../resources/Union.svg";
 import MeetingPreview from "../../components/PreviewCards/MeetingPreview";
 import ForumQuestionPreview from "../../components/PreviewCards/ForumQuestionPreview";
-import ProposalPreview from "../../components/PreviewCards/ProposalPreview";
+import ProposalRequestPreview from "../../components/PreviewCards/ProposalRequestPreview";
 
 const WrapperBox = styled((props) => <Box {...props} />)(({ theme }) => ({
     padding: "0 6vw 3vh",
@@ -40,7 +40,9 @@ const MyRequests = () => {
                         );
                     else if (request.type === "question-proposal")
                         return (
-                            <ProposalPreview key={`${request.type}${index}`} />
+                            <ProposalRequestPreview
+                                key={`${request.type}${index}`}
+                            />
                         );
                 })}
             </Stack>

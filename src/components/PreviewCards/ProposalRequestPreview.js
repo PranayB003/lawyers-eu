@@ -3,7 +3,7 @@ import React from "react";
 import classes from "./PreviewCards.module.css";
 import { Paper, Avatar, Typography, Stack } from "@mui/material";
 
-const ProposalPreview = ({
+const ProposalRequestPreview = ({
     question = "Random question testing testing testing testing testing",
     image,
     numberOfAnswers = "13",
@@ -32,4 +32,4 @@ const ProposalPreview = ({
     );
 };
 
-export default ProposalPreview;
+export default ProposalRequestPreview;
