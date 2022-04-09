@@ -1,17 +1,12 @@
 import React from "react";
 
-import { styled, Typography, Box, Stack, Button } from "@mui/material";
+import { Stack } from "@mui/material";
 import TitleBar from "../../components/TitleBar/TitleBar";
 import { ReactComponent as BackIcon } from "../../resources/Union.svg";
 import MeetingPreview from "../../components/PreviewCards/MeetingPreview";
 import ForumQuestionPreview from "../../components/PreviewCards/ForumQuestionPreview";
 import ProposalRequestPreview from "../../components/PreviewCards/ProposalRequestPreview";
-
-const WrapperBox = styled((props) => <Box {...props} />)(({ theme }) => ({
-    padding: "0 6vw 3vh",
-    display: "flex",
-    flexDirection: "column",
-}));
+import WrapperBox from "../../components/WrapperBox";
 
 const MyRequests = () => {
     const myRequests = [

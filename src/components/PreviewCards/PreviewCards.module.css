@@ -36,3 +36,8 @@
     text-decoration: underline;
     text-underline-offset: 2px;
 }
+
+.meetingLink {
+    text-decoration: none;
+    color: inherit;
+}

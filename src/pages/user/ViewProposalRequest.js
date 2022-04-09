@@ -1,15 +1,10 @@
 import React from "react";
 
-import { styled, Box, Stack, Chip, Typography } from "@mui/material";
+import { styled, Stack, Chip, Typography } from "@mui/material";
 import TitleBar from "../../components/TitleBar/TitleBar";
 import { ReactComponent as BackIcon } from "../../resources/Union.svg";
 import ProposalReplyPreview from "../../components/PreviewCards/ProposalReplyPreview";
-
-const WrapperBox = styled((props) => <Box {...props} />)(({ theme }) => ({
-    padding: "0 6vw 3vh",
-    display: "flex",
-    flexDirection: "column",
-}));
+import WrapperBox from "../../components/WrapperBox";
 
 const ChipStack = styled((props) => (
     <Stack spacing={1} direction="row" {...props} />
@@ -18,7 +13,7 @@ const ChipStack = styled((props) => (
     rowGap: "5px",
 });
 
-const ViewProposal = () => {
+const ViewProposalRequest = () => {
     const proposalRequestDetails = {
         categories: ["Intellectual Property Laws (IPR)"],
         question:
@@ -78,4 +73,4 @@ const ViewProposal = () => {
     );
 };
 
-export default ViewProposal;
+export default ViewProposalRequest;

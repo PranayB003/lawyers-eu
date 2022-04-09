@@ -1,13 +1,7 @@
 import React from "react";
 
-import { Box, Chip, Stack, styled } from "@mui/material";
-import { NavLink, useNavigate } from "react-router-dom";
-
-const chipLinkDetails = [
-    { label: "Latest", to: "latest" },
-    { label: "Top", to: "top" },
-    { label: "Ask New", to: "new" },
-];
+import { Chip, Stack, styled } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
 const StyledNavLink = styled((props) => <NavLink {...props} />)({
     textDecoration: "none",
@@ -27,16 +21,30 @@ const StyledChip = styled((props) => <Chip {...props} />)({
     textDecoration: "none",
 });
 
-const NavChips = () => {
-    const navigate = useNavigate();
+const forumChipLinkDetails = [
+    { label: "Latest", to: "latest" },
+    { label: "Top", to: "top" },
+    { label: "Ask New", to: "new" },
+];
+
+const meetingChipLinkDetails = [
+    { label: "Links", to: "links" },
+    { label: "Chat", to: "chat" },
+    { label: "Cancel", to: "cancel" },
+];
+
+const getLinkDetails = (type) => {
+    if (type === "forum") return forumChipLinkDetails;
+    else if (type === "meeting") return meetingChipLinkDetails;
+};
+
+const NavChips = ({ type = "forum" || "meeting" }) => {
+    const chipLinkDetails = getLinkDetails(type);
 
     return (
         <Stack spacing={3} direction="row">
             {chipLinkDetails.map((chipLink) => (
-                <StyledNavLink
-                    key={chipLink.label}
-                    to={`/forum/${chipLink.to}`}
-                >
+                <StyledNavLink key={chipLink.label} to={`./../${chipLink.to}`}>
                     {({ isActive }) => (
                         <StyledChip
                             variant={isActive ? "filled" : "outlined"}

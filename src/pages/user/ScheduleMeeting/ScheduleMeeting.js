@@ -5,7 +5,7 @@ import { Box, Button, Stack } from "@mui/material";
 import TitleBar from "./../../../components/TitleBar/TitleBar";
 import { ReactComponent as BackIcon } from "../../../resources/Union.svg";
 import InputWithLabel from "../../../components/FormComponents/InputWithLabel";
-import MiniMeetingInfo from "../../../components/PreviewCards/MeetingPreview";
+import MeetingPreview from "../../../components/PreviewCards/MeetingPreview";
 
 const meetingDetailInputs = [
     { name: "name", label: "Full Name", helperText: "Full Name" },
@@ -51,7 +51,7 @@ const ScheduleMeeting = ({ lawyerImage, lawyerName, date, time, cost }) => {
     return (
         <Box className={classes.wrapperBox}>
             <TitleBar Title="Enter Details" startIcon={<BackIcon />} />
-            <MiniMeetingInfo
+            <MeetingPreview
                 lawyerImage={lawyerImage}
                 lawyerName={lawyerName}
                 date={date}

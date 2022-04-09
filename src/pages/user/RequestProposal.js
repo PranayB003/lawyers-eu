@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
-import { styled, Typography, Box, Stack, Button } from "@mui/material";
+import { Typography, Stack, Button } from "@mui/material";
 import TitleBar from "../../components/TitleBar/TitleBar";
 import { ReactComponent as SettingsIcon } from "../../resources/Icon.svg";
 import { ReactComponent as BackIcon } from "../../resources/Union.svg";
 import DropDownWithLabel from "../../components/FormComponents/DropDownWithLabel";
 import InputWithLabel from "../../components/FormComponents/InputWithLabel";
+import WrapperBox from "../../components/WrapperBox";
 
 const questionInputDetails = [
     {
@@ -62,12 +63,6 @@ const getInitialState = () => {
     });
     return initialState;
 };
-
-const WrapperBox = styled((props) => <Box {...props} />)(({ theme }) => ({
-    padding: "0 6vw 3vh",
-    display: "flex",
-    flexDirection: "column",
-}));
 
 const RequestProposal = () => {
     const [questionDetails, setQuestionDetails] = useState(getInitialState);

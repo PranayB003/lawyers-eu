@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Box, Button, Stack, styled, Typography } from "@mui/material";
+import { Button, Stack, Typography } from "@mui/material";
 import TitleBar from "../../components/TitleBar/TitleBar";
 import { ReactComponent as SettingsIcon } from "../../resources/Icon.svg";
 import { ReactComponent as BackIcon } from "../../resources/Union.svg";
@@ -8,12 +8,7 @@ import DropDownWithLabel from "../../components/FormComponents/DropDownWithLabel
 import InputWithLabel from "../../components/FormComponents/InputWithLabel";
 import CheckWithLabel from "../../components/FormComponents/CheckWithLabel";
 import NavChips from "../../components/NavChips/NavChips";
-
-const WrapperBox = styled((props) => <Box {...props} />)(({ theme }) => ({
-    padding: "0 6vw 3vh",
-    display: "flex",
-    flexDirection: "column",
-}));
+import WrapperBox from "../../components/WrapperBox";
 
 const questionInputDetails = [
     {
