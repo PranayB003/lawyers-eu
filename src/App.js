@@ -17,6 +17,7 @@ import RequestProposal from "./pages/user/RequestProposal";
 import MyRequests from "./pages/user/MyRequests";
 import ViewProposalRequest from "./pages/user/ViewProposalRequest";
 import ViewMeetingDetails from "./pages/user/ViewMeetingDetails";
+import LawyerProfile from "./pages/user/LawyerProfile";
 
 function App() {
     return (
@@ -41,6 +42,7 @@ function App() {
                     element={<SelectServices />}
                 />
                 <Route path="lawyers/available" element={<LawyersForYou />} />
+                <Route path="lawyers/:lawyerId" element={<LawyerProfile />} />
                 <Route path="select/city" element={<SelectCity />} />
                 <Route
                     path="client/schedule-meeting"
