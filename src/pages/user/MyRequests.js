@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import TitleBar from "../../components/TitleBar/TitleBar";
 import { ReactComponent as BackIcon } from "../../resources/Union.svg";
 import MeetingPreview from "../../components/PreviewCards/MeetingPreview";
@@ -39,6 +39,7 @@ const MyRequests = () => {
                                 key={`${request.type}${index}`}
                             />
                         );
+                    else return <Typography>Invalid Request Type</Typography>;
                 })}
             </Stack>
         </WrapperBox>

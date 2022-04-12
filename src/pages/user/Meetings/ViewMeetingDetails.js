@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import { styled, Stack, Typography, Box, IconButton } from "@mui/material";
 import { useParams } from "react-router-dom";
 import { FiEdit } from "react-icons/fi";
-import { ReactComponent as BackIcon } from "../../resources/Union.svg";
-import TitleBar from "../../components/TitleBar/TitleBar";
-import WrapperBox from "../../components/WrapperBox";
-import InputWithLabel from "../../components/FormComponents/InputWithLabel";
-import MeetingPreview from "../../components/PreviewCards/MeetingPreview";
-import NavChips from "../../components/NavChips/NavChips";
-import MeetingLinkPreview from "../../components/PreviewCards/MeetingLinkPreview";
+import { ReactComponent as BackIcon } from "../../../resources/Union.svg";
+import TitleBar from "../../../components/TitleBar/TitleBar";
+import WrapperBox from "../../../components/WrapperBox";
+import InputWithLabel from "../../../components/FormComponents/InputWithLabel";
+import MeetingPreview from "../../../components/PreviewCards/MeetingPreview";
+import NavChips from "../../../components/NavChips/NavChips";
+import MeetingLinkPreview from "../../../components/PreviewCards/MeetingLinkPreview";
 
 const meetingDetailInputs = [
     { name: "name", label: "Full Name", helperText: "Full Name" },
@@ -56,7 +56,7 @@ const SubHeadingBox = styled((props) => <Box {...props} />)({
 });
 
 const ViewMeetingDetails = () => {
-    const { meetingID } = useParams();
+    const { meetingId } = useParams();
     const [disabled, setDisabled] = useState(true);
     const [meetingDetails, setMeetingDetails] = useState(getInitialState);
 
