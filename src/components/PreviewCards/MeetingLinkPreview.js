@@ -23,6 +23,7 @@ const MeetingLinkPreview = ({
                     <a
                         href={meetingLink}
                         target="_blank"
+                        rel="noreferrer"
                         className={classes.meetingLink}
                     >
                         {meetingLink}

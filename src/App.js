@@ -16,8 +16,9 @@ import PostQuestion from "./pages/user/PostQuestion";
 import RequestProposal from "./pages/user/RequestProposal";
 import MyRequests from "./pages/user/MyRequests";
 import ViewProposalRequest from "./pages/user/ViewProposalRequest";
-import ViewMeetingDetails from "./pages/user/ViewMeetingDetails";
+import ViewMeetingDetails from "./pages/user/Meetings/ViewMeetingDetails";
 import LawyerProfile from "./pages/user/LawyerProfile";
+import MeetingChat from "./pages/user/Meetings/MeetingChat";
 
 function App() {
     return (
@@ -52,12 +53,16 @@ function App() {
                 <Route path="request-proposal" element={<RequestProposal />} />
                 <Route path="requests" element={<MyRequests />} />
                 <Route
-                    path="requests/:proposalID"
+                    path="requests/:proposalId"
                     element={<ViewProposalRequest />}
                 />
                 <Route
                     path="meetings/:meetingId/links"
                     element={<ViewMeetingDetails />}
+                />
+                <Route
+                    path="meetings/:meetingId/chat"
+                    element={<MeetingChat />}
                 />
 
                 {/* Lawyer UI Routes */}

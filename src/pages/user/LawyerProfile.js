@@ -8,7 +8,6 @@ import TitleBar from "../../components/TitleBar/TitleBar";
 import WrapperBox from "../../components/WrapperBox";
 import dummyImage from "../../resources/vivek.png";
 import BulletedList from "../../components/BulletedList";
-import { textTransform } from "@mui/system";
 import LawyerCharacteristicsCards from "../../components/LawyerCharacteristicsCards";
 
 const BioStack = styled((props) => <Stack spacing={2} {...props} />)({
@@ -47,7 +46,7 @@ const OutlinedButton = styled((props) => (
 }));
 
 const LawyerProfile = () => {
-    const lawyerId = useParams();
+    const { lawyerId } = useParams();
 
     const [expanded, setExpanded] = useState(false);
 

@@ -79,7 +79,7 @@ const RequestProposal = () => {
     return (
         <WrapperBox>
             <TitleBar
-                Title="Request Proposal"
+                Title="New Request"
                 endIcon={<SettingsIcon />}
                 startIcon={<BackIcon />}
             />
