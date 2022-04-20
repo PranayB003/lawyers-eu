@@ -21,6 +21,7 @@ const MessageBox = styled(Box, {
     marginBottom: "5px",
     borderRadius: from === "me" ? "15px 15px 0px 15px" : "15px 15px 15px 0px",
     background: from === "me" ? "#000000" : "#F1F4F7",
+    overflow: "hidden",
 }));
 
 const TimeBox = styled(Box)({
@@ -50,7 +51,14 @@ const ChatMessage = ({ message }) => {
         <StyledBox from={from}>
             {body.map((message, index) => (
                 <MessageBox key={index} from={from}>
-                    <Typography color={from === "me" ? "#FFFFFF" : "#000000"}>
+                    <Typography
+                        color={from === "me" ? "#FFFFFF" : "#000000"}
+                        style={{
+                            overflow: "hidden",
+                            overflowWrap: "break-word",
+                            whiteSpace: "break-spaces",
+                        }}
+                    >
                         {message}
                     </Typography>
                 </MessageBox>
