@@ -65,7 +65,10 @@ const MeetingChat = () => {
             {
                 id: "03",
                 from: "me",
-                body: ["Kab karega discuss bhai jldi bta", "Bta na bsdk"],
+                body: [
+                    "Sure, let me know when you're available for the same.",
+                    "I'll be looking forward to this meeting.",
+                ],
                 time: {
                     date: timeNow.getDate(),
                     hour: timeNow.getHours(),
@@ -75,7 +78,7 @@ const MeetingChat = () => {
             },
         ];
 
-        setChat((prevChat) => [...prevChat, ...newMessages]);
+        setChat((prevChat) => [...newMessages]);
     }, [setChat]);
 
     const messageSubmitHandler = (newMessage, time) => {
@@ -110,7 +113,13 @@ const MeetingChat = () => {
                     {lawyerInfo.name}
                 </Typography>
             </FlexBox>
-            <Stack spacing={2} flexGrow={1} overflow="auto">
+            <Stack
+                spacing={2}
+                flexGrow={1}
+                overflow="auto"
+                marginX="-5vw"
+                paddingX="3vw"
+            >
                 {chat.map((message) => (
                     <ChatMessage key={message.id} message={message} />
                 ))}
