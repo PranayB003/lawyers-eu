@@ -11,6 +11,7 @@ import OTPUser from "./pages/user/OTPPage/OTPPage";
 import SelectServices from "./pages/user/SelectServices";
 import LawyersForYou from "./pages/user/LawyersAvailable/LawyerForYou";
 import SelectCity from "./pages/user/SelectCity/selectCity";
+import Forum from "./pages/Forum/Forum";
 function App() {
   return (
     <React.Fragment>
@@ -27,6 +28,7 @@ function App() {
         <Route path="client/select-services" element={<SelectServices />} />
         <Route path="lawyers/available" element={<LawyersForYou />} />
         <Route path="select/city" element={<SelectCity />} />
+      <Route path="forum" element={<Forum/>}/>
         {/* Lawyer UI Routes */}
         <Route path="lawyer/register" element={<LawyerRegister />} />
         <Route
