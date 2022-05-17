@@ -1,0 +1,19 @@
+.TopWrapper{
+    display: inline-block;
+    width: 100%;
+    /* background-color: pink; */
+}
+.Right1{
+/* float: right; */
+/* margin-left: 100px; */
+width: 100%;
+/* background-color: black; */
+}
+
+.Right{
+float: right;
+/* background-color: black; */
+}
+.Left{
+    float: left;
+}

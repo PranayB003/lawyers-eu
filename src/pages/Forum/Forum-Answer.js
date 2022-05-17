@@ -19,22 +19,10 @@ const Forum = () => {
         "I have a small query can a Christian spinster women demand for fathers ancestor",
       BodyText:
         "I have a small query can a Christian spinster women demand for father's ancestors property while he is alive and dwelling in the same premises (more than one property all inheritance belonging to ancestors property loca…",
-    },
-    {
-      timeStamp: "25th March, 2022 (3 hours, 51 minutes ago)",
-      ChipData: "intellectual property Right",
-      Heading:
-        "I have a small query can a Christian spinster women demand for fathers ancestor",
-      BodyText:
-        "I have a small query can a Christian spinster women demand for father's ancestors property while he is alive and dwelling in the same premises (more than one property all inheritance belonging to ancestors property loca…",
-    },
-    {
-      timeStamp: "25th March, 2022 (3 hours, 51 minutes ago)",
-      ChipData: "intellectual property Right",
-      Heading:
-        "I have a small query can a Christian spinster women demand for fathers ancestor",
-      BodyText:
-        "I have a small query can a Christian spinster women demand for father's ancestors property while he is alive and dwelling in the same premises (more than one property all inheritance belonging to ancestors property loca…",
+      Answers: [
+        "This is a dummy answer, baap ki jaydaat hadapne aa gayi saali, thodi si sharam karo",
+        "This is a dummy answer, baap ki jaydaat hadapne aa gayi saali, thodi si sharam karo",
+      ],
     },
   ];
   return (
@@ -61,19 +49,15 @@ const Forum = () => {
                     ChipData={elem.ChipData}
                     Heading={elem.Heading}
                     BodyText={elem.BodyText}
+                    Button={false}
+                    Answers={elem.Answers}
+                    Elevation={false}
                   />
                 </>
               );
             })}
           </Grid>
         </Box>
-        <Typography className={classes.EndingHeading}>
-          Need Legal Advice ?
-        </Typography>
-        <Typography className={classes.EndingText}>
-          Send us your requirements and get proposals directly to your inbox.
-        </Typography>
-        <Button variant="outlined" className={classes.EndingButton} >Get Free Proposals</Button>
       </Box>
     </>
   );

@@ -1,0 +1,76 @@
+.ChipContainer {
+  margin-top: 22px;
+  margin-bottom: -20px;
+  margin-left: 12px;
+}
+.CardHeader {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+
+  /* Black */
+
+  color: #000000;
+}
+.TimeStampText {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 9px;
+  color: #c4c4c4;
+  margin-top: 22px;
+  margin-bottom: -10px;
+  margin-left: 15px;
+}
+.BodyText {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+
+  margin-top: -2px;
+  margin-left: 12px;
+  line-height: 24px;
+  display: flex;
+
+  color: #a1a1a1;
+}
+.AnswerButton {
+  margin-top: 12px;
+  margin-left: 12px;
+  line-height: 24px;
+  margin-bottom: 12px;
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  border-color: #000000;
+  border-width: 2px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.TopWrapper {
+  display: inline-block;
+  width: 100%;
+}
+.MoreQuestionsWrap{
+  font-size: 21px;
+  float: left;
+}
+.AnswerWrap{
+  margin-left: 13px;
+  margin-bottom: 16px;
+  margin-top: 12px;
+  font-size: 21px;
+}

@@ -1,0 +1,59 @@
+.TopCard {
+  width: 100%;
+}
+.CardContent{
+    font-family: 'Maven Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 14px;
+/* display: flex; */
+margin-left: 14px;
+padding-top: 12px;
+padding-bottom: 12px;
+align-items: center;
+color: #A1A1A1;
+}
+.CardHeading2 {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  position: relative;
+  margin-left: 74px;
+  margin-top: -18px;
+  padding-bottom: 22px;
+  line-height: 14px;
+  padding-left: 12px;
+  color: #8E8E8E;
+  
+}
+
+.CardHeading {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  position: relative;
+  margin-left: 74px;
+  margin-top: -53px;
+  padding-bottom: 22px;
+  padding-left: 12px;
+  /* margin-left: -12px; */
+  line-height: 14px;
+  /* identical to box height */
+
+  /* Basic / Dark - #000000 */
+
+  color: #000000;
+}
+.WrapperForAll{
+    margin-right: 20px;
+}
+.Image{
+    margin-left: 12px;
+    margin-top: 12px;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}

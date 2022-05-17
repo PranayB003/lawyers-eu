@@ -11,7 +11,10 @@ import OTPUser from "./pages/user/OTPPage/OTPPage";
 import SelectServices from "./pages/user/SelectServices";
 import LawyersForYou from "./pages/user/LawyersAvailable/LawyerForYou";
 import SelectCity from "./pages/user/SelectCity/selectCity";
+import LawyerProfile from "./pages/user/LawyerProfile/LawyerProfile";
 import Forum from "./pages/Forum/Forum";
+import ForumAnswer from "./pages/Forum/Forum-Answer";
+import UserHome from "./pages/user/Home/Home";
 function App() {
   return (
     <React.Fragment>
@@ -28,7 +31,9 @@ function App() {
         <Route path="client/select-services" element={<SelectServices />} />
         <Route path="lawyers/available" element={<LawyersForYou />} />
         <Route path="select/city" element={<SelectCity />} />
-      <Route path="forum" element={<Forum/>}/>
+        <Route path="forum" element={<Forum />} />
+        <Route path="forum-answer" element={<ForumAnswer />} />
+        <Route path="user/home" element={<UserHome />} />
         {/* Lawyer UI Routes */}
         <Route path="lawyer/register" element={<LawyerRegister />} />
         <Route
@@ -36,6 +41,10 @@ function App() {
           element={<GetStarted user="lawyer" />}
         />
         <Route path="Lawyer/OTP" element={<OTPUser user="Lawyer" />} />
+        <Route
+          path="Lawyer/Profile-Booking"
+          element={<LawyerProfile user="Vivek Sharma" />}
+        />
       </Routes>
     </React.Fragment>
   );

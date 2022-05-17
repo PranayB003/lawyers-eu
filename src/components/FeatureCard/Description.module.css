@@ -1,0 +1,20 @@
+.Heading {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.300349px;
+
+  color: #000000;
+}
+.BoxWrapperForButton {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+.SecondButton{
+  margin-top: 30px;
+  color : white;
+  background-color: #000000;
+}

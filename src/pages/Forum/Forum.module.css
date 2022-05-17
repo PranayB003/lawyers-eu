@@ -47,3 +47,32 @@
 .nextBtn {
   margin: 3vh auto;
 }
+.EndingHeading {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 25px;
+  text-align: center;
+}
+.EndingText {
+  /* Text Big */
+
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  margin-top: 25px;
+  color: #000000;
+}
+.EndingButton{
+  color: white;
+  background-color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

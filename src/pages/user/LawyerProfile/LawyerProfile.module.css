@@ -1,0 +1,7 @@
+.wrapperBox {
+    min-height: 100vh;
+    padding: 0 6vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
