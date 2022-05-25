@@ -7,7 +7,7 @@ const StyledTextField = styled((props) => (
     <TextField variant="standard" {...props} />
 ))(({ theme }) => ({
     "& .MuiInputLabel-root": {
-        fontSize: theme.typography.body2.fontSize,
+        fontSize: theme.typography.h2.fontSize,
         fontWeight: theme.typography.body2.fontWeight,
         paddingLeft: "20px",
         position: "relative",
@@ -19,7 +19,7 @@ const StyledTextField = styled((props) => (
     },
     "& .MuiInput-input": {
         padding: "10px 0px 10px 20px !important",
-        fontSize: theme.typography.subtitle1.fontSize,
+        fontSize: theme.typography.subtitle2.fontSize,
         fontWeight: theme.typography.body2.fontWeight,
     },
 }));

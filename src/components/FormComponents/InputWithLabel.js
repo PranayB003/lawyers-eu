@@ -5,10 +5,11 @@ import { FormControl, Input, InputLabel, styled } from "@mui/material";
 const StyledFormControl = styled((props) => <FormControl {...props} />)(
     ({ theme }) => ({
         "& .MuiInputLabel-root": {
-            fontSize: theme.typography.body2.fontSize,
+            fontSize: theme.typography.h2.fontSize,
             fontWeight: theme.typography.body2.fontWeight,
             paddingLeft: "20px",
             position: "relative",
+            overflow: "visible",
         },
         "& .MuiInput-root": {
             marginTop: "0px",
@@ -17,7 +18,7 @@ const StyledFormControl = styled((props) => <FormControl {...props} />)(
         },
         "& .MuiInput-input": {
             padding: "10px 20px",
-            fontSize: theme.typography.subtitle1.fontSize,
+            fontSize: theme.typography.subtitle2.fontSize,
             fontWeight: theme.typography.body2.fontWeight,
         },
     })
