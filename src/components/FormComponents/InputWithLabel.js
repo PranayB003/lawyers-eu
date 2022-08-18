@@ -21,6 +21,9 @@ const StyledFormControl = styled((props) => <FormControl {...props} />)(
             fontSize: theme.typography.subtitle2.fontSize,
             fontWeight: theme.typography.body2.fontWeight,
         },
+        "& .MuiInput-root.Mui-error": {
+            border: `2px solid ${theme.palette.error.main}`,
+        },
     })
 );
 
@@ -31,14 +34,16 @@ const InputWithLabel = ({
     onChange,
     helperText,
     inputProps,
+    labelProps,
+    formControlProps,
 }) => {
     const changeHandler = (event) => {
         onChange(name, event.target.value);
     };
 
     return (
-        <StyledFormControl variant="standard">
-            <InputLabel htmlFor={name} shrink>
+        <StyledFormControl variant="standard" {...formControlProps}>
+            <InputLabel htmlFor={name} shrink {...labelProps}>
                 {label}
             </InputLabel>
             <Input

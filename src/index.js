@@ -7,6 +7,18 @@ import reportWebVitals from "./reportWebVitals";
 import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles";
 import theme from "./theme/theme";
 import { BrowserRouter } from "react-router-dom";
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyDQmbr6kPQaHcLBVAXW3DHL9-_55r67SgE",
+    authDomain: "lawyers-eu.firebaseapp.com",
+    projectId: "lawyers-eu",
+    storageBucket: "lawyers-eu.appspot.com",
+    messagingSenderId: "333899243296",
+    appId: "1:333899243296:web:95e466c9f3bb2c237a8145",
+};
+
+export const app = initializeApp(firebaseConfig);
 
 ReactDOM.render(
     <React.StrictMode>
